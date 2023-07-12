@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Carta natal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="totalgrid">
+        <header>
+            <img id="imglogo" src="images/Logo.png" alt="logo de Astrowiki">   
+            <h1 id="titulo"> Astrowiki </h1>
+            <button id="btnMenu">Menu</button>
+        </header> 
+            <nav class="hidden" id="menu">
+                <ul>
+                    <li> <a href="index.html" target="_blank">Home</a></li>
+                    <li> <a href="fortuna.html" target="_blank"> Horóscopo 2023 </a></li>
+                    <li> <a href="carta.html" target="_blank"> Calculá tu carta astral</a></li>
+                    <li>Eventos</li>
+                </ul>
+            </nav> 
+
+        <article>
+            <h1> Calculá tu carta natal online </h1>
+            <p> Tu carta natal o astral, es una "foto" del cielo al momento de tu nacimiento donde se puede ver la ubicación y conexiones entre los planetas en ese instante, para que puedas utilizar la astrología como herramienta de autoconocimiento y crecimiento. </p>
+            <figure><img id="imgcarta" src="images/carta.jpg" alt="carta natal"></figure>
+            <p> Para comenzar, ingresá tus datos. Es muy importante que sepas tus datos personales con precisión, de otra forma el cálculo no será correcto. </p> 
+            <form id="form">
+                    <div class="renglon"><label> Nombre y apellido completo: </label><input type="text" name="nombre" placeholder="María Valentina Pérez" required/></div>
+                    <div class="renglon"><label> Sexo: </label><input type="radio" name="sexo" value="masculino" required><label>Masculino</label>
+                                                               <input type="radio" name="sexo" value="femenino" required><label>Femenino</label></div>
+                    <div class="renglon"><label>E-mail: </label><input type="email" name="email" placeholder="username@domain.com" required/></div>
+                    <div class="renglon"><label>Fecha de tu nacimiento: </label><input type="date" name="fecha" required/></div>
+                    <div class="renglon"><label>Hora de tu nacimiento: </label><input type="time" name="hora" required/></div>
+                    <div class="renglon"><label>Lugar de nacimiento: </label><input type="text" name="lugar" placeholder="Tandil, Buenos Aires, Argentina" required/></div>
+                    <div class="renglon"><p>La latitud, longitud y zona horaria se calculan automáticamente a partir del lugar de nacimiento.</p></div>
+                    <div class="renglon"><p>Para continuar clickee en "Generar Captcha" y escriba los caracteres que aparecen:</p></div>
+                    <div class="renglon"><p id="Captchagenerado"></p></div>
+                    <div class="renglon"><input id="ingresa" type="text" value="" required/></div>
+                    <div class="renglonbtns">
+                        <button class="btn" type="button" id="generador">Generar nuevo Captcha</button>
+                        <button class="btn" type="button" id="validador">Validar Captcha</button>
+                    </div>
+                    <div class="renglon"><p id="valida"> </p></div>
+                    <button class="btn" id="calcular">Calcular carta</button>
+                    <div class="renglon"><p> Al hacer click en "Calcular carta" acepta las condiciones, políticas y términos de uso de Astrowiki. </p></div>
+                    <div class="renglon"><p>La carta natal se genera automáticamente y se le envia al email proporcionado.</p></div>
+            </form>
+            <p>Cartas natales ya enviadas:</p>
+            <table id="tablaCarta">
+            </table>
+            <p>Agregue 3 familiares con los que le gustaría compatibilizar su carta natal (opcional):</p>
+            <button class="btn" type="button" id="btnAddFamiliares">Agrega 3 familiares al azar</button>
+            <button class="btn" id="borrar">Borrar todos los datos</button> 
+        </article>
+
+        <footer>
+            <p>Nuestras redes: </p>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>   
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/carta.js"></script>
+    </body>
+    </html>
