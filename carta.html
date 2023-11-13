@@ -14,14 +14,15 @@
             <h1 id="titulo"> Astrowiki </h1>
             <button id="btnMenu">Menu</button>
         </header> 
-            <nav class="hidden" id="menu">
-                <ul>
-                    <li> <a href="index.html" target="_blank">Home</a></li>
-                    <li> <a href="fortuna.html" target="_blank"> Horóscopo 2023 </a></li>
-                    <li> <a href="carta.html" target="_blank"> Calculá tu carta astral</a></li>
-                    <li>Eventos</li>
-                </ul>
-            </nav> 
+
+        <nav class="hidden" id="menu">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="fortuna.html"> Horóscopo 2023 </a></li>
+                <li> <a href="carta.html"> Calculá tu carta astral</a></li>
+                <li>Eventos</li>
+            </ul>
+        </nav> 
 
         <article>
             <h1> Calculá tu carta natal online </h1>
@@ -37,6 +38,10 @@
                     <div class="renglon"><label>Hora de tu nacimiento: </label><input type="time" name="hora" required/></div>
                     <div class="renglon"><label>Lugar de nacimiento: </label><input type="text" name="lugar" placeholder="Tandil, Buenos Aires, Argentina" required/></div>
                     <div class="renglon"><p>La latitud, longitud y zona horaria se calculan automáticamente a partir del lugar de nacimiento.</p></div>
+                    <div class="renglon"><p>Agregue 3 familiares con los que le gustaría compatibilizar su carta natal (opcional):</p></div>
+                    <div class="renglon"><label> Familiar 1: </label><input type="text" name="familiar1" placeholder="madre"/></div>
+                    <div class="renglon"><label> Familiar 2: </label><input type="text" name="familiar2" placeholder="padre"/></div>
+                    <div class="renglon"><label> Familiar 3: </label><input type="text" name="familiar3" placeholder="hermano"/></div>
                     <div class="renglon"><p>Para continuar clickee en "Generar Captcha" y escriba los caracteres que aparecen:</p></div>
                     <div class="renglon"><p id="Captchagenerado"></p></div>
                     <div class="renglon"><input id="ingresa" type="text" value="" required/></div>
@@ -52,9 +57,6 @@
             <p>Cartas natales ya enviadas:</p>
             <table id="tablaCarta">
             </table>
-            <p>Agregue 3 familiares con los que le gustaría compatibilizar su carta natal (opcional):</p>
-            <button class="btn" type="button" id="btnAddFamiliares">Agrega 3 familiares al azar</button>
-            <button class="btn" id="borrar">Borrar todos los datos</button> 
         </article>
 
         <footer>
@@ -65,7 +67,7 @@
                 <li>Twitter</li>
             </ul>   
         </footer>
-    </div>
+        </div>
     <script type="text/javascript" src="js/carta.js"></script>
     </body>
     </html>
